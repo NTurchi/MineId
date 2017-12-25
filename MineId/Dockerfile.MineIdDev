@@ -1,0 +1,11 @@
+﻿FROM microsoft/dotnet:2.0-sdk
+
+WORKDIR /app
+VOLUME ["/app"]
+
+COPY MineId.csproj .
+COPY NuGet.config .
+COPY Directory.Build.props .
+
+ENV ASPNETCORE_ENVIRONMENT Development
+ENTRYPOINT dotnet restore && dotnet watch run --configuration Debug

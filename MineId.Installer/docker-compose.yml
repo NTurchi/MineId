@@ -1,0 +1,14 @@
+﻿version: "3"
+services:
+  mineId:
+    image: nturchi/mineid:latest
+    environment:
+    - MINEID_PORT=10200
+    ports:
+      - "10200:10200"
+#  pgDatabase:
+#    image: nturchi/mineid_pgdb:latest
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - ./Database:/var/lib/postgresql/data:z
