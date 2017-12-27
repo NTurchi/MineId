@@ -9,7 +9,7 @@ def cmd(command):
 
 def input_cmd():
     command = raw_input("Enter command to execute : ");
-    debug = "Command à executer : " + command;
+    debug = "Commande à executer : " + command;
     print(debug);
     cmd(command);
     
